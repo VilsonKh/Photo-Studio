@@ -10,7 +10,6 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   min-width: 374px;
-  
 }
 
 .container {
@@ -304,9 +303,10 @@ body {
 .location1_button-left {
   width: 93px;
   position: absolute;
-  top: 138px;
+  top: 50%;
   z-index: 1;
   left: -46px;
+  transform: translateY(-50%);
 }
 
 .location3 {
@@ -316,8 +316,9 @@ body {
 .location3_button-right {
   width: 93px;
   position: absolute;
-  top: 138px;
+  top: 50%;
   right: -46px;
+  transform: translateY(-50%);
 }
 
 .locations_button {
@@ -515,7 +516,6 @@ body {
   position: absolute;
   top: 637px;
   right: 356px;
-
 }
 
 /* IDEA */
@@ -757,6 +757,7 @@ body {
 
 .certificate_container {
   position: relative;
+  z-index: -1;
 }
 
 .certificate_inner {
@@ -811,15 +812,10 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: 1;
 }
 
-.certificate_line {
-  position: absolute;
-  bottom: -68px;
-  right: -100px;
-  max-width: 700px;
-  width: 100%;
+.inner_right-envelope {
+  z-index: 2;
 }
 
 .right_text {
@@ -831,6 +827,12 @@ body {
   color: var(--color-black);
   width: 380px;
   margin-bottom: 24px;
+}
+
+.certificate-box {
+  position: absolute;
+  bottom: -20%;
+  right: -45%;
 }
 
 .certificate_button {
@@ -1097,7 +1099,7 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 435px;
+ 
   width: 100%;
   margin-bottom: 60px;
 }
@@ -1127,8 +1129,6 @@ svg path {
 }
 
 @media screen and (max-width: 656px) {
-
-
 }
 
 @media screen and (max-width: 1242px) {
@@ -1214,22 +1214,14 @@ svg path {
   }
 
   .gallery_button-left {
-    top: calc(50% - 18px);
     right: 15px;
     width: auto;
-  }
-
-  .gallery_container-center {
   }
 
   .gallery_center {
     min-height: 451px;
     min-width: 406px;
     object-fit: contain;
-  }
-
-  .button-left {
-    width: 46px;
   }
 
   .gallery_right {
@@ -1244,17 +1236,12 @@ svg path {
   }
 
   .gallery_button-right {
-    top: calc(50% - 18px);
     left: 15px;
     width: auto;
   }
 
   .location:not(:last-child) {
     margin-right: 17px;
-  }
-
-  .button-right {
-    width: 46px;
   }
 
   .location1_button-right {
@@ -1276,23 +1263,6 @@ svg path {
     width: 214px;
   }
 
-  /* STAGES */
-
-  .stages {
-    background: center/contain url(img/stages_line-mob.png) no-repeat;
-    background-position: center center;
-    background-size: 110%;
-  }
-
-  .stage_1 {
-    top: 0;
-    left: 16px;
-  }
-
-  .stage_2 {
-    top: 57px;
-    right: 30px;
-  }
   /* STAGES */
 
   .stages {
@@ -1342,8 +1312,20 @@ svg path {
     margin-top: 34px;
   }
 
+  .certificate-box {
+    right: -23%;
+    bottom: -27%;
+    width: 650px;
+    overflow: hidden;
+    height: 100%;
+  }
+
   .certificate_line {
-    right: -165px;
+    min-width: 120%;
+  }
+
+  .certificate_button {
+    z-index: 2;
   }
 
   .inner_left {
@@ -1432,13 +1414,13 @@ svg path {
     display: none;
   }
 
-.phone-icon {
+  .phone-icon {
     display: block;
-}
+  }
 
-.menu-burger {
+  .menu-burger {
     display: block;
-}
+  }
 
   .contacts_button {
     display: none;
@@ -1496,15 +1478,15 @@ svg path {
 
   .location1_button-left {
     top: 50%;
-    left: -153px;
-    width: 100%;
+    left: -10px;
+    width: 55px;
     transform: translateY(-50%);
   }
 
   .location3_button-right {
     top: 50%;
-    right: -153px;
-    width: 100%;
+    right: -10px;
+    width: 55px;
     transform: translateY(-50%);
   }
 
@@ -1524,7 +1506,7 @@ svg path {
     min-height: 230px;
     min-width: 69.5px;
     object-fit: cover;
-    object-position: 87% ;
+    object-position: 87%;
   }
 
   .gallery_center {
@@ -1654,7 +1636,14 @@ svg path {
 
   .cards_option {
     margin-bottom: 24px;
-    height: 673px;
+    height: auto;
+    padding-bottom: 45px;
+  }
+
+  .advantage_item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
   }
 
   .price_button {
@@ -1668,14 +1657,12 @@ svg path {
   .certificate_inner {
     flex-direction: column;
     padding: 40px 8px 50px 8px;
-    
   }
 
   .inner_left {
     width: 240px;
     margin: 0 auto;
     margin-bottom: 8px;
-    
   }
 
   .inner_title {
@@ -1706,9 +1693,23 @@ svg path {
     width: 326px;
   }
 
+  .inner_right {
+    width: 100%;
+  }
+
+  .inner_right-envelope {
+    width: 267px;
+  }
+
+  .certificate-box {
+    width: 346px;
+    right: 0;
+    bottom: -25%;
+    height: auto;
+  }
+
   .certificate_line {
-    left: 0;
-    bottom: 0;
+    min-width: 115%;
   }
 
   .carousel_2-review {
