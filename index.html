@@ -82,7 +82,7 @@
 					<img class="gallery__slide-img" src="img/gallery_right.jpg" alt="" />
 				</div>
 			</div>
-			<div class="portfolio__buttons">
+	
 				<button class="gallery__button-right">
 					<svg class="button-right" width="93" height="93" viewBox="0 0 93 93" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<g filter="url(#filter0_d_106_450)">
@@ -123,7 +123,7 @@
 						</defs>
 					</svg>
 				</button>
-			</div>
+	
 		</section>
 		<section class="locations">
 			<div class="locations__container container">
@@ -252,7 +252,7 @@
 					</div>
 
 					<div class="gallery__card card-women">
-						<img class="card-women_img" src="img/services_woomen.jpg" alt="women" />
+						<img class="card-women__img" src="img/services_woomen.jpg" alt="women" />
 						<p>Фотосессия для девушек</p>
 					</div>
 
@@ -332,13 +332,13 @@
 						человеком в фотографиях в необычном месте.
 					</p>
 				</div>
-				<button class="opening-button accent">
+				<button id="ideaButton" class="opening-button accent">
 					<p>Подробнее</p>
-					<div class="arrow__container">
+					<div id="ideaArrow" class="arrow__container">
 						<img class="arrow-down" src="img/arrow-down.svg" alt="" />
 					</div>
 				</button>
-				<div  class="idea__expand">
+				<div class="idea__expand">
 					<p>• Семейная фотоссесия</p>
 
 					<p>
@@ -362,13 +362,9 @@
 
 					<p>• Фотоссесия для девушек и парней.</p>
 
-					<p>
-                        Хочешь стать кем-то другим? Или, наоборот, показать свое «я»? Фотоссесия для девушек или парней поможет воплотить любые идеи.
-                    </p>
+					<p>Хочешь стать кем-то другим? Или, наоборот, показать свое «я»? Фотоссесия для девушек или парней поможет воплотить любые идеи.</p>
 
-					<p>
-                        Помимо вышеперечисленного есть и другие стили фотоссесий. Вы самостоятельно выбираете, а наши фотозалы помогают вам и вдохновляют.
-                    </p>
+					<p>Помимо вышеперечисленного есть и другие стили фотоссесий. Вы самостоятельно выбираете, а наши фотозалы помогают вам и вдохновляют.</p>
 
 					<p>Кстати, о них…</p>
 
@@ -528,14 +524,40 @@
 						Боитесь фотографироваться? Наши локации помогут вам расслабиться и почувствовать себя как дома.
 					</p>
 					<p>Доступные цены для всех и вежливость.</p>
-					<p>Повторим еще раз: мы работаем в первую очередь для клиентов, и аренда нашей фотостудии имеют цены семи...</p>
 				</div>
-				<button class="opening-button accent">
+				<button id="trendButton" class="opening-button accent">
 					<p>Подробнее</p>
-					<div class="arrow__container">
+					<div id="trendArrow" class="arrow__container">
 						<img class="arrow-down" src="img/arrow-down.svg" alt="" />
 					</div>
 				</button>
+				<div class="trend__expand">
+					<p>Повторим еще раз: мы работаем в первую очередь для клиентов, и аренда нашей фотостудии имеют цены семи чашек кофе.</p>
+					<p>Вы можете расплатится любым удобным для вас способом: наличным или безналичным расчетом. Все для вашего удобства.</p>
+
+					<p>
+						Вежливость тоже относиться к главным нашим качествам. У нас вы не найдете ужасного обращения, мы всегда готовы ответить вам и проконсультировать, помочь и стать вашими
+						друзьями. Все наши работники улыбчивы и приветливы вам, которые не оставят вам плохого настроения.
+					</p>
+
+					<p>
+						В каждом городе есть хотя бы несколько фотостудий и часто поход туда, становиться чуть ли не традицией семьи, пар или друзей. Тренд на истории в фотографиях для социальных
+						сетей, где мы проводим много времени, не угасал и не угаснет никогда. Фотоссесия лав стори или семейная привлекает внимание всех людей и, доказано, набирает больше всего
+						одобрений со стороны людей всего мира. Для качественного исполнения вашей мечты стоит обращаться к профессионалу и выбирать интересные локации.
+					</p>
+
+					<p>
+						Наша фотостудия предлагает и то, и то. Профессиональный фотограф сможет сделать качественные, интересные фотографии, помочь вам воплотить вашу идею в жизнь в уютных залах
+						фотостудии.
+					</p>
+
+					<p>
+						На ваш выбор у нас есть 7 фотозалов, каждый из которых прекрасен и индивидуален по-своему. В больших залах отлично будет смотреться групповая фотосессия, а в залах меньше
+						получиться интересная фотоссесия в деловом стиле.
+					</p>
+
+					<p>Мы работаем в первую очередь на качество, поэтому наши цены не завышенные и доступны всем желающим. У нас есть различные и удобные способы оплаты для вас.</p>
+				</div>
 			</div>
 		</section>
 		<section class="certificate">
@@ -575,84 +597,90 @@
 			<div class="reviews__container container">
 				<h2 class="reviews__title title">Отзывы</h2>
 				<div class="reviews__carousel">
-					<button class="carousel__button-left">
-						<svg class="button-left" width="93" height="93" viewBox="0 0 93 93" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<g filter="url(#filter0_d_106_454)">
-								<circle cx="46.5" cy="44.5" r="36.5" transform="rotate(-180 46.5 44.5)" fill="white" />
-								<path d="M53.4224 65.5L34.5858 46.6651C33.8047 45.8841 33.8047 44.6177 34.5858 43.8366L53.4224 25" stroke="#E97522" stroke-width="4" stroke-linecap="round" />
-							</g>
-							<defs>
-								<filter id="filter0_d_106_454" x="0" y="0" width="93" height="93" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-									<feFlood flood-opacity="0" result="BackgroundImageFix" />
-									<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-									<feOffset dy="2" />
-									<feGaussianBlur stdDeviation="5" />
-									<feComposite in2="hardAlpha" operator="out" />
-									<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
-									<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_106_454" />
-									<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_106_454" result="shape" />
-								</filter>
-							</defs>
-						</svg>
-					</button>
-					<div class="carousel__1-review carousel__review">
-						<div class="img__container">
+					<div class="carousel__review">
+						<div class="carousel__img-container">
 							<img src="img/reviews_1.jpg" alt="" />
 						</div>
-						<p class="1-review__name review__name">Мария</p>
+						<p class="review__name">Мария</p>
 						<p class="review__text">
 							Были на той неделе с подругой в фотостудии. Очень все понравилось! Чисто, красиво, уютно! Две милые девушки, напоили чаем с конфетами, а их очаровательный котик просто
 							покорил мое сердце )) В общем, душевная атмосфера, обязательно вернемся еще раз!
 						</p>
-						<button class="reviews__button accent">Показать еще</button>
+						<button class="review__button accent">Показать еще</button>
 					</div>
-					<div class="carousel__2-review carousel__review">
-						<div class="img__container">
+					<div class="carousel__review">
+						<div class="carousel__img-container">
 							<img src="img/reviews_2.jpg" alt="" />
 						</div>
-						<p class="2-review_name review__name">Сергей</p>
+						<p class="review__name">Сергей</p>
 						<p class="review__text">
 							Супер студия :) Близко от метро, большие окна, тупло зимой, высокие потолки и много пространства :) Есть система скидок и акций :) Люблю, хожу, всем хвалю :)
 						</p>
-						<button class="reviews__button accent">Показать еще</button>
+						<button class="review__button accent">Показать еще</button>
 					</div>
-					<div class="carousel_3-review carousel__review">
-						<div class="img__container">
+					<div class="carousel__review">
+						<div class="carousel__img-container">
 							<img src="img/reviews_3.jpg" alt="" />
 						</div>
-						<p class="2-review__name review__name">Руслан</p>
+						<p class="review__name">Руслан</p>
 						<p class="review__text">Отличная уютная студия которая подойдет для различный жанров съемки! Советую!</p>
-						<button class="reviews__button accent">Показать еще</button>
+						<button class="review__button accent">Показать еще</button>
 					</div>
-					<button class="carousel__button-right">
-						<svg class="button-right" width="93" height="93" viewBox="0 0 93 93" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<g filter="url(#filter0_d_106_450)">
-								<circle cx="46.5" cy="44.5" r="36.5" fill="white" />
-								<path d="M39.5776 23.5L58.4142 42.3349C59.1953 43.1159 59.1953 44.3823 58.4142 45.1634L39.5776 64" stroke="#E97522" stroke-width="4" stroke-linecap="round" />
-							</g>
-							<defs>
-								<filter id="filter0_d_106_450" x="0" y="0" width="93" height="93" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-									<feFlood flood-opacity="0" result="BackgroundImageFix" />
-									<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-									<feOffset dy="2" />
-									<feGaussianBlur stdDeviation="5" />
-									<feComposite in2="hardAlpha" operator="out" />
-									<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
-									<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_106_450" />
-									<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_106_450" result="shape" />
-								</filter>
-							</defs>
-						</svg>
-					</button>
+					<div class="carousel__review">
+						<div class="carousel__img-container">
+							<img src="img/reviews_1.jpg" alt="" />
+						</div>
+						<p class="review__name">Мария</p>
+						<p class="review__text">
+							Были на той неделе с подругой в фотостудии. Очень все понравилось! Чисто, красиво, уютно! Две милые девушки, напоили чаем с конфетами, а их очаровательный котик просто
+							покорил мое сердце )) В общем, душевная атмосфера, обязательно вернемся еще раз!
+						</p>
+						<button class="review__button accent">Показать еще</button>
+					</div>
+					<div class="carousel__review">
+						<div class="carousel__img-container">
+							<img src="img/reviews_2.jpg" alt="" />
+						</div>
+						<p class="review__name">Сергей</p>
+						<p class="review__text">
+							Супер студия :) Близко от метро, большие окна, тупло зимой, высокие потолки и много пространства :) Есть система скидок и акций :) Люблю, хожу, всем хвалю :)
+						</p>
+						<button class="review__button accent">Показать еще</button>
+					</div>
+					<div class="carousel__review">
+						<div class="carousel__img-container">
+							<img src="img/reviews_3.jpg" alt="" />
+						</div>
+						<p class="review__name">Руслан</p>
+						<p class="review__text">Отличная уютная студия которая подойдет для различный жанров съемки! Советую!</p>
+						<button class="review__button accent">Показать еще</button>
+					</div>
 				</div>
+
+				<button class="carousel__button-left">
+					<img class="button-left" src="img/port_button-left.svg" alt="" />
+				</button>
+				<button class="carousel__button-right">
+					<img src="img/port_button-right.svg" alt="" />
+				</button>
+
 				<button class="button review__add-review">Добавить отзыв</button>
 			</div>
 		</section>
 		<section class="contacts">
 			<div class="contacts__container container">
-				<div class="contacts_map">
-					<img class="map" src="img/map.png" alt="" />
-					<img class="map_pin" src="img/map_pin.png" alt="" />
+				<div class="contacts__map">
+					<iframe
+						width="425"
+						height="350"
+						frameborder="0"
+						scrolling="no"
+						marginheight="0"
+						marginwidth="0"
+						src="https://www.openstreetmap.org/export/embed.html?bbox=37.84879088401795%2C55.98888820061538%2C37.85662293434144%2C55.99452893012596&amp;layer=mapnik&amp;marker=55.9917086682516%2C37.85270690917969"
+						
+					></iframe
+					><br /><small> <a href="https://www.openstreetmap.org/?mlat=55.99171&amp;mlon=37.85271#map=17/55.99171/37.85271">Посмотреть более крупную карту</a></small>
 				</div>
 				<form class="form" action="#" method="">
 					<h2 class="contacts__title">Форма обратной связи</h2>
@@ -663,7 +691,7 @@
 						<input class="input" type="email" name="e-mail" placeholder="Введите ваш E-mail" required />
 						<label for="phone">Телефон</label>
 						<input class="input" type="tel" name="phone" placeholder="Введите ваш Телефон" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" required />
-						<button type="submit" class="button contacts_submit">Отправить</button>
+						<button type="submit" class="button contacts__submit">Отправить</button>
 					</div>
 					<p class="contacts__prescription">
 						Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь c <a class="prescription_link" href="#">политикой конфиденциальности</a>
@@ -751,7 +779,6 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		></script>
-
 
 		<script src="index.js"></script>
 	</body>
