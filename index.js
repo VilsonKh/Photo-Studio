@@ -84,4 +84,28 @@ $(function () {
 			trendArrow.css("transform", "rotate(180deg)");
 		}
 	});
+
+	// OPEN FULLSCREEN
+
+	const imageFullscreen = $('.imageFullscreen')
+
+
+	$(document).on('click', '.slick-slide', function (e) {
+		imageFullscreen.addClass('active');
+
+		const target = e.target;
+		console.log(target)
+
+		const scrollTop = $(document).scrollTop()
+		imageFullscreen.css('top',scrollTop)
+	})
+
+	$('.imageFullscreen__close').on('click',function() {
+		imageFullscreen.removeClass('active')
+	})
+
+	$('.imageFullscreen').on('click', function(e) {
+		imageFullscreen.removeClass('active')
+	})
+
 });

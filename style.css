@@ -210,6 +210,7 @@ body {
 
 .gallery__slide {
 	padding: 30px 0;
+	cursor: pointer;
 }
 
 .gallery__slide.slick-current {
@@ -258,6 +259,66 @@ body {
 	transform: translateX(-50%);
 }
 
+/* IMAGE FULLSCREEN */
+
+.imageFullscreen {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	background-color: rgba(0, 0, 0, .8);
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	transition: opacity .3s linear;
+	z-index: 1000;
+}
+
+.imageFullscreen.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.imageFullscreen__container {
+	width: 40%;
+
+
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.imageFullscreen__img {
+	width: 100%;
+}
+
+.imageFullscreen__close {
+	position: absolute;
+	top: 10%;
+	right: 10%;
+	width: 50px;
+	height: 50px;
+}
+
+.imageFullscreen__close-line {
+	width: 50px;
+	height: 5px;
+	border-radius: 5px;
+	background-color: white;
+	transform: rotate(45deg);
+}
+
+.imageFullscreen__close-line::before {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 5px;
+	border-radius: 5px;
+	background-color: white;
+	transform: rotate(90deg);
+}
+
 /* LOCATIONS */
 
 .locations {
@@ -282,7 +343,7 @@ body {
 	position: absolute;
 	top: 50%;
 	z-index: 1;
-	left: 5%;
+	left: 0;
 	transform: translateY(-50%);
 }
 
@@ -598,6 +659,7 @@ body {
 .prices__cards {
 	display: flex;
 	justify-content: space-between;
+	gap: 30px;
 }
 
 .cards__option {
@@ -609,6 +671,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: top right;
 	transition: all 0.2s linear;
+	margin: 0 auto;
 }
 
 .cards__option:hover {
@@ -1062,8 +1125,8 @@ label {
 }
 
 .contacts__map {
-	width: 858px;
-
+	max-width: 858px;
+width: 100%;
 	position: absolute;
 	z-index: -1;
 	left: 0;
@@ -1327,7 +1390,6 @@ svg path {
 
 	.option__maxi {
 		margin: 0 auto;
-		margin-top: 34px;
 	}
 
 	.certificate-box {
@@ -1375,13 +1437,16 @@ svg path {
 	}
 
 	.contacts__container {
-		padding-bottom: 130px;
+		flex-direction: column;
+		padding-top: 0;
+		padding-bottom: 120px;
 	}
 
 	/* footer */
 
 	.contacts__map {
-		width: 848px;
+		max-width: 848px;
+		position: static;
 	}
 
 	.map__pin {
@@ -1806,11 +1871,7 @@ svg path {
 
 	/* CONTACTS */
 
-	.contacts__container {
-		flex-direction: column;
-		padding-top: 0;
-		padding-bottom: 120px;
-	}
+
 
 	.contacts__map {
 		position: relative;
