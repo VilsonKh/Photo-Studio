@@ -1,5 +1,5 @@
 # 📸 Photo Studio
-The Photography Studiois a website dedicated to showcasing the creativity and expertise of a professional photography studio.
+The Photo Studio is a website dedicated to showcasing the creativity and expertise of a professional photography studio.
 
 The **Photography Studio Website** can be accessed via [this link](https://vilsonkh.github.io/photo-studio/).
 
