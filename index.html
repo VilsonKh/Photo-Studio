@@ -27,62 +27,74 @@
 					<img class="header__logo" src="img/logo.svg" alt="logo" />
 				</div>
 				<nav class="header__menu menu">
-					<a href="#" class="menu__item">Портфолио</a>
-					<a href="#" class="menu__item">Виды работ</a>
-					<a href="#" class="menu__item">О фотостудии</a>
-					<a href="#" class="menu__item">Услуги и цены</a>
-					<a href="#" class="menu__item">Контакты</a>
+					<a href="#portfolio" class="menu__item">Портфолио</a>
+					<a href="#about" class="menu__item">Виды работ</a>
+					<a href="#reviews" class="menu__item">О фотостудии</a>
+					<a href="#services" class="menu__item">Услуги и цены</a>
+					<a href="#contacts" class="menu__item">Контакты</a>
 				</nav>
 				<div class="header__contacts">
 					<button class="contacts__button">обратный звонок</button>
 					<a class="contacts__number" href="tel:+74993446091">+7 (499) 344 60 91</a>
-					<img class="phone-icon" src="img/call-icon.svg" alt="" />
-					<a class="menu-burger">
-						<img src="img/burger_icon.svg" alt="" />
-					</a>
+					<img class="phone-icon" src="img/call-icon.svg" alt="phone-icon" />
+					<button class="menu-burger">
+						<img src="img/burger_icon.svg" alt="burger-menu" />
+					</button>
 				</div>
 			</div>
 		</header>
-		<section class="main-screen">
-			<video class="main-screen__video" autoplay muted disablePictureInPicture controlsList="nodownload" src="video/0605.webm"></video>
-			<div class="main-screen__container container">
-				<div class="main-screen__inner">
-					<div class="main-screen__info">
-						<h1 class="main-screen__title"><span class="first-row">Профессиональная</span> фотосессия в студии</h1>
-						<h2 class="main-screen__subtitle">Наша фотостудия позволит исполнить ваши мечты</h2>
-						<p class="main-screen__paragraph">
-							Фотографии стали неотъемлемой частью нашей жизни. Это теперь не просто памятные снимки в альбомах, ныне фото становиться способом понравиться окружающим, получить
-							восхищение, заявить о себе всему миру. Выбор правильной фотостудии занимает далеко не последнее место в получение фотографий. И мы с точностью заявляем, что нашей
-							фотостудией вы останетесь довольны и еще не раз захотите возвращаться к нам.
-						</p>
-						<button class="main-screen__button button">получить консультацию</button>
+		<main>
+			<div class="burger-menu">
+				<div class="burger-menu__container">
+					<ul class="burger-menu__list">
+						<li class="burger-menu__item"><a class="burger-menu__link" href="#portfolio">Портфолио</a></li>
+						<li class="burger-menu__item"><a class="burger-menu__link" href="#about">О фотостудии</a></li>
+						<li class="burger-menu__item"><a class="burger-menu__link" href="#reviews">Отзывы</a></li>
+						<li class="burger-menu__item"><a class="burger-menu__link" href="#services">Виды работ</a></li>
+						<li class="burger-menu__item"><a class="burger-menu__link" href="#contacts">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+			<section class="main-screen">
+				<video class="main-screen__video" autoplay muted disablePictureInPicture controlsList="nodownload" src="video/0605.webm"></video>
+				<div class="main-screen__container container">
+					<div class="main-screen__inner">
+						<div class="main-screen__info">
+							<h1 class="main-screen__title"><span class="first-row">Профессиональная</span> фотосессия в студии</h1>
+							<h2 class="main-screen__subtitle">Наша фотостудия позволит исполнить ваши мечты</h2>
+							<p class="main-screen__paragraph">
+								Фотографии стали неотъемлемой частью нашей жизни. Это теперь не просто памятные снимки в альбомах, ныне фото становиться способом понравиться окружающим, получить
+								восхищение, заявить о себе всему миру. Выбор правильной фотостудии занимает далеко не последнее место в получение фотографий. И мы с точностью заявляем, что нашей
+								фотостудией вы останетесь довольны и еще не раз захотите возвращаться к нам.
+							</p>
+							<button class="main-screen__button button">получить консультацию</button>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="portfolio">
-			<h2 class="portfolio__title title">Наши работы</h2>
-			<div class="portfolio__gallery">
-				<div class="gallery__slide">
-					<img class="gallery__slide-img" src="img/gallery_left.webp" alt="" />
+			</section>
+			<section id="portfolio" class="portfolio">
+				<h2 class="portfolio__title title">Наши работы</h2>
+				<div class="portfolio__gallery">
+					<div class="gallery__slide">
+						<img class="gallery__slide-img" src="img/gallery_left.webp" alt="фото студии" />
+					</div>
+					<div class="gallery__slide">
+						<img class="gallery__slide-img" src="img/gallery_center.webp" alt="фото студии" />
+					</div>
+					<div class="gallery__slide">
+						<img class="gallery__slide-img" src="img/gallery_right.webp" alt="фото студии" />
+					</div>
+					<div class="gallery__slide">
+						<img class="gallery__slide-img" src="img/gallery_left.webp" alt="фото студии" />
+					</div>
+					<div class="gallery__slide">
+						<img class="gallery__slide-img" src="img/gallery_center.webp" alt="фото студии" />
+					</div>
+					<div class="gallery__slide">
+						<img class="gallery__slide-img" src="img/gallery_right.webp" alt="фото студии" />
+					</div>
 				</div>
-				<div class="gallery__slide">
-					<img class="gallery__slide-img" src="img/gallery_center.webp" alt="" />
-				</div>
-				<div class="gallery__slide">
-					<img class="gallery__slide-img" src="img/gallery_right.webp" alt="" />
-				</div>
-				<div class="gallery__slide">
-					<img class="gallery__slide-img" src="img/gallery_left.webp" alt="" />
-				</div>
-				<div class="gallery__slide">
-					<img class="gallery__slide-img" src="img/gallery_center.webp" alt="" />
-				</div>
-				<div class="gallery__slide">
-					<img class="gallery__slide-img" src="img/gallery_right.webp" alt="" />
-				</div>
-			</div>
-	
+
 				<button class="gallery__button-right">
 					<svg class="button-right" width="93" height="93" viewBox="0 0 93 93" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<g filter="url(#filter0_d_106_450)">
@@ -123,41 +135,548 @@
 						</defs>
 					</svg>
 				</button>
-	
-		</section>
-		<div class="imageFullscreen">
-			<div class="imageFullscreen__container">
-				<img class="imageFullscreen__img" src="img/gallery_left.webp" alt="" />
+			</section>
+			<div class="imageFullscreen">
+				<div class="imageFullscreen__container"><img class="imageFullscreen__img" src="" alt="fullscreen image"/></div>
+				<button class="imageFullscreen__close">
+					<div class="imageFullscreen__close-line"></div>
+				</button>
 			</div>
-			<button class="imageFullscreen__close">
-				<div class="imageFullscreen__close-line"></div>
-			</button>
-		</div>
-		<section class="locations">
-			<div class="locations__container container">
-				<h2 class="locations__title title">Наши локации</h2>
-				<div class="locations__gallery">
-					<div class="location__slide">
-						<img class="location__slide-img" src="img/locations_1.webp" alt="" />
+			<section class="locations">
+				<div class="locations__container container">
+					<h2 class="locations__title title">Наши локации</h2>
+					<div class="locations__gallery">
+						<div class="location__slide">
+							<img class="location__slide-img" src="img/locations__1.png" alt="локация" />
+						</div>
+						<div class="location__slide">
+							<img class="location__slide-img" src="img/locations__2.png" alt="локация" />
+						</div>
+						<div class="location__slide">
+							<img class="location__slide-img" src="img/locations__3.png" alt="локация" />
+						</div>
+						<div class="location__slide">
+							<img class="location__slide-img" src="img/locations__1.png" alt="локация" />
+						</div>
+						<div class="location__slide">
+							<img class="location__slide-img" src="img/locations__2.png" alt="локация" />
+						</div>
+						<div class="location__slide">
+							<img class="location__slide-img" src="img/locations__3.png" alt="локация" />
+						</div>
 					</div>
-					<div class="location__slide">
-						<img class="location__slide-img" src="img/locations_2.webp" alt="" />
+					<div class="locations__groupButtons">
+						<button class="locations__button-left">
+							<svg class="button-left" width="93" height="93" viewBox="0 0 93 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g filter="url(#filter0_d_106_454)">
+									<circle cx="46.5" cy="44.5" r="36.5" transform="rotate(-180 46.5 44.5)" fill="white" />
+									<path d="M53.4224 65.5L34.5858 46.6651C33.8047 45.8841 33.8047 44.6177 34.5858 43.8366L53.4224 25" stroke="#E97522" stroke-width="4" stroke-linecap="round" />
+								</g>
+								<defs>
+									<filter id="filter0_d_106_454" x="0" y="0" width="93" height="93" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+										<feFlood flood-opacity="0" result="BackgroundImageFix" />
+										<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+										<feOffset dy="2" />
+										<feGaussianBlur stdDeviation="5" />
+										<feComposite in2="hardAlpha" operator="out" />
+										<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+										<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_106_454" />
+										<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_106_454" result="shape" />
+									</filter>
+								</defs>
+							</svg>
+						</button>
+						<button class="locations__button-right">
+							<svg class="button-right" width="93" height="93" viewBox="0 0 93 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g filter="url(#filter0_d_106_450)">
+									<circle cx="46.5" cy="44.5" r="36.5" fill="white" />
+									<path d="M39.5776 23.5L58.4142 42.3349C59.1953 43.1159 59.1953 44.3823 58.4142 45.1634L39.5776 64" stroke="#E97522" stroke-width="4" stroke-linecap="round" />
+								</g>
+								<defs>
+									<filter id="filter0_d_106_450" x="0" y="0" width="93" height="93" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+										<feFlood flood-opacity="0" result="BackgroundImageFix" />
+										<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+										<feOffset dy="2" />
+										<feGaussianBlur stdDeviation="5" />
+										<feComposite in2="hardAlpha" operator="out" />
+										<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+										<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_106_450" />
+										<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_106_450" result="shape" />
+									</filter>
+								</defs>
+							</svg>
+						</button>
 					</div>
-					<div class="location__slide">
-						<img class="location__slide-img" src="img/locations_3.webp" alt="" />
-					</div>
-					<div class="location__slide">
-						<img class="location__slide-img" src="img/locations_1.webp" alt="" />
-					</div>
-					<div class="location__slide">
-						<img class="location__slide-img" src="img/locations_2.webp" alt="" />
-					</div>
-					<div class="location__slide">
-						<img class="location__slide-img" src="img/locations_3.webp" alt="" />
+					<div class="locations__showLocations"><button class="button locations__button">выбрать локацию</button></div>
+				</div>
+			</section>
+			<section id="about" class="studio-decor">
+				<div class="studio-decor__container">
+					<h2 class="studio-decor__title title">Оформление студии</h2>
+					<iframe
+						class="studio-decor__video"
+						src="https://www.youtube.com/embed/jmxZl9xc-TM"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen
+					>
+					</iframe>
+				</div>
+			</section>
+			<section id="services" class="services">
+				<div class="services__container container">
+					<h2 class="services__title title">Виды услуг</h2>
+					<div class="services__gallery">
+						<div class="gallery__card card-lovestory">
+							<img src="img/sersices_love-story.webp" alt="loveStory" />
+							<p>Фотосессия Лав Стори</p>
+						</div>
+
+						<div class="gallery__card card-teens">
+							<img src="img/services_teens.webp" alt="teens" />
+							<p>Фотосессия для подростков</p>
+						</div>
+
+						<div class="gallery__card card-couples">
+							<img src="img/services_couples.webp" alt="couples" />
+							<p>Парная фотосессия</p>
+						</div>
+
+						<div class="gallery__card card-couples2">
+							<img src="img/services_couple2.webp" alt="couples" />
+							<p>Парная фотосессия</p>
+						</div>
+
+						<div class="gallery__card card-boys">
+							<img src="img/services_boys.webp" alt="boys" />
+							<p>Фотосессия для парней</p>
+						</div>
+
+						<div class="gallery__card card-family">
+							<img src="img/services_family.webp" alt="family" />
+							<p>Семейная фотосессия (дети +14)</p>
+						</div>
+
+						<div class="gallery__card card-group">
+							<img src="img/services_group.webp" alt="group" />
+							<p>Групповая фотосессия</p>
+						</div>
+
+						<div class="gallery__card card-lookbook">
+							<img src="img/services_lookbook.webp" alt="lookbook" />
+							<p>Фотосессия Лукбук</p>
+						</div>
+
+						<div class="gallery__card card-women">
+							<img class="card-women__img" src="img/services_woomen.webp" alt="women" />
+							<p>Фотосессия для девушек</p>
+						</div>
+
+						<div class="gallery__card card-pregnant">
+							<img src="img/services_pregnant.webp" alt="pregnant" />
+							<p>Фотосессия для беременных</p>
+						</div>
+
+						<div class="gallery__card card-animals">
+							<img src="img/services_animals.webp" alt="dogs" />
+							<p>Фотосессия с животными</p>
+						</div>
+
+						<div class="gallery__card card-casual">
+							<img src="img/services_casual-style.webp" alt="casual" />
+							<p>Фотосессия "Деловой стиль"</p>
+						</div>
 					</div>
 				</div>
-				<div class="locations__groupButtons">
-					<button class="locations__button-left">
+			</section>
+			<section class="stages">
+				<div class="stages__container container">
+					<h2 class="stages__title title">Этапы работ</h2>
+					<div class="stages__wrapper">
+						<div class="stages__item stage__1">
+							<div class="stages__inner">
+								<h3 class="item__title">Заявка</h3>
+								<p class="item__text">С помощью онлайн формы вы можете подать заявку для бронирования наших услуг.</p>
+							</div>
+							<p class="stage-number number-1">1</p>
+						</div>
+
+						<div class="stages__item stage__2">
+							<div class="stages__inner">
+								<h3 class="item__title">Бронь</h3>
+								<p class="item__text">С Вами свяжется наш менеджер для уточнения деталей и подтверждения бронирования.</p>
+							</div>
+							<p class="stage-number number-2">2</p>
+						</div>
+
+						<div class="stages__item stage__3">
+							<div class="stages__inner">
+								<h3 class="item__title">Составление Технического задания</h3>
+								<p class="item__text">Наши специалисты составят подробное Техническое задание, с ваших слов.</p>
+							</div>
+							<p class="stage-number number-3">3</p>
+						</div>
+
+						<div class="stages__item stage__4">
+							<div class="stages__inner">
+								<h3 class="item__title">Съемка</h3>
+								<p class="item__text">Съемка будет проходиться опытным фотографом на выбранной Вами локации.</p>
+							</div>
+							<p class="stage-number number-4">4</p>
+						</div>
+
+						<div class="stages__item stage__5">
+							<div class="stages__inner">
+								<h3 class="item__title">Готовые фото</h3>
+								<p class="item__text">В течение 7 дней мы обработаем Ваши фотографии и направим ссылку на онлайн хранилище.</p>
+							</div>
+							<p class="stage-number number-5">5</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="idea">
+				<div class="idea__container container">
+					<h3 class="idea__title">Фотостудия для любых идейных фотоссесий</h3>
+					<div class="idea__paragraph">
+						<p>Воплотите мечту с нашей фотостудией и приобретите красивые, уникальные, качественные фотографии, выбрав один из наших залов. <br />А их, -на секундочку, -аж семь штук.</p>
+						<p>Каждый наш зал оборудован интерьером и профессиональным оборудованием, и подойдет для любой фотоссесии, а мы хотим рассказать вам о все подробнее.</p>
+						<p>Какие идеи можно воплотить?</p>
+						<p>• Фотоссесия Love Story</p>
+						<p>
+							Мечтаете показать всему миру вашу историю создания любви или хранить снимки в памятном альбоме, то это фотоссесия отлично подойдет вам. Расскажите вашу историю с любимым
+							человеком в фотографиях в необычном месте.
+						</p>
+					</div>
+					<button id="ideaButton" class="opening-button accent">
+						<p>Подробнее</p>
+						<div id="ideaArrow" class="arrow__container">
+							<img class="arrow-down" src="img/arrow-down.svg" alt=" стрелка вниз" />
+						</div>
+					</button>
+					<div class="idea__expand">
+						<p>• Семейная фотоссесия</p>
+
+						<p>
+							Семья — это самое главное в жизни любого человека. Хотите повесить фотографии в вашем уютном доме, смотреть на них и испытывать прилив нежности, значит семейная фотоссесия
+							в нашей фотостудии станет отличным вариантом.
+						</p>
+
+						<p>• Фотоссесия для беременных девушек</p>
+
+						<p>
+							Желаете сохранить воспоминания о прекрасном времени в жизни каждой женщины? Наши локации помогут вам организовать и воссоздать в фотографиях любовь матери и еще не
+							родившегося ребенка.
+						</p>
+
+						<p>• Фотоссесия «Деловой стиль».</p>
+
+						<p>
+							Вы не из тех, кто любит яркие чувства, эмоции и считаете себя сдержанным. Вам нужны фотографии, где вы раскроетесь как профессионал, произведете впечатление как деловой
+							человек. Эта фотоссесия станет вашим правильным решением.
+						</p>
+
+						<p>• Фотоссесия для девушек и парней.</p>
+
+						<p>Хочешь стать кем-то другим? Или, наоборот, показать свое «я»? Фотоссесия для девушек или парней поможет воплотить любые идеи.</p>
+
+						<p>Помимо вышеперечисленного есть и другие стили фотоссесий. Вы самостоятельно выбираете, а наши фотозалы помогают вам и вдохновляют.</p>
+
+						<p>Кстати, о них…</p>
+
+						<p>
+							Все семь фото локаций уникальные в своем роде. Мы пытались воссоздать непохожесть на другие фотостудии не только в городе, но и во всей стране. Каждый зал отличается от
+							других по дизайнерскому решению и интерьеру. И каждый зал пропитан своим духом, стилем и видится для каждого нашего посетителя по-разному. Светлые помещения помогут
+							получить более качественные, яркие фотоснимки. Трендовая мебель и другие предметы интерьера можно двигать и активно использовать в фотосъемках. Локации подойдут для любых
+							людей и задач: блогеров и медийных личностей, обычных и счастливых семей, предпринимателей и подростков. Что еще нужно знать о нас?
+						</p>
+
+						<p>
+							Оборудование. Неотъемлемая часть любой фотостудии и нередко владельцы фотостудий экономят на этой важной части. Мы используем все оборудование только от профессиональных
+							продавцов, которые уже не один год предлагают свои товары на мировом рынке. Вы найдете все что нужно и необходимо для работы фотографов, для создания образов и света. Ведь
+							именно от оборудования часто зависит качество получающихся фотоснимков.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="price">
+				<div class="price__container container">
+					<h2 class="price__title title">Стоимость фотосессии</h2>
+					<div class="prices__cards">
+						<div class="cards__option option__mini">
+							<div class="option__container">
+								<div class="option__top">
+									<h3 class="card__title">MINI</h3>
+									<p class="option__price">2500 <span class="price_rub">&#8381;</span></p>
+									<p class="option__loc-q">/ 1 локация</p>
+								</div>
+								<ul class="option__advantage">
+									<li class="advantage__item">
+										<img src="img/list_marker.png" alt="list marker" />
+										Длительность - 30 минут
+									</li>
+									<li class="advantage__item">
+										<img src="img/list_marker.png" alt="list marker" />
+										Исходники - До 100 штук
+									</li>
+									<li class="advantage__item">
+										<img src="img/list_marker.png" alt="list marker" />
+										Ретушь - 4 фото
+									</li>
+									<li class="advantage__item">
+										<img src="img/list_marker.png" alt="list marker" />
+										Аренда фотостудии - Бесплатно
+									</li>
+									<li class="advantage__item">
+										<img src="img/list_marker.png" alt="list marker" />
+										Любой образ
+									</li>
+								</ul>
+							</div>
+							<div class="cards__additional-services">
+								<p class="additional-services__title">Дополнительные услуги</p>
+								<div class="additional-services__container">
+									<p>Помощь в позировании</p>
+									<p>Визажист + 2000 &#8381;</p>
+									<p class="additional-services__retouch">Дополнительная ретушь фото - 1 шт./250 &#8381;</p>
+								</div>
+								<button class="button price__button">Забронировать</button>
+							</div>
+						</div>
+
+						<div class="cards__option option__standart">
+							<div class="option__container">
+								<div class="option__top">
+									<h3 class="card__title">STANDART</h3>
+									<p class="option__price">5000 <span class="price_rub">&#8381;</span></p>
+									<p class="option__loc-q">/ 2 локация</p>
+								</div>
+								<ul class="option__advantage">
+									<li class="advantage__item">
+										<img src="img/list_marker.png" alt="list marker" />
+										Длительность - 1 час 20 минут
+									</li>
+									<li class="advantage__item">
+										<img src="img/list_marker.png" alt="list marker" />
+										Исходники - До 200 штук
+									</li>
+									<li class="advantage__item">
+										<img src="img/list_marker.png" alt="list marker" />
+										Ретушь - 8 фото
+									</li>
+									<li class="advantage__item">
+										<img src="img/list_marker.png" alt="list marker" />
+										Аренда фотостудии - Бесплатно
+									</li>
+									<li class="advantage__item">
+										<img src="img/list_marker.png" alt="list marker" />
+										Любой образ
+									</li>
+								</ul>
+							</div>
+							<div class="cards__additional-services">
+								<p class="additional-services__title">Дополнительные услуги</p>
+								<div class="additional-services__container">
+									<p>Помощь в позировании</p>
+									<p>Визажист + 2000 &#8381;</p>
+									<p class="additional-services__retouch">Дополнительная ретушь фото - 1 шт./250 &#8381;</p>
+								</div>
+								<button class="button price__button">Забронировать</button>
+							</div>
+						</div>
+
+						<div class="cards__option option__maxi">
+							<div class="option__container">
+								<div class="option__top">
+									<h3 class="card__title">MAXI</h3>
+									<p class="option__price">7500 <span class="price__rub">&#8381;</span></p>
+									<p class="option__loc-q">/ Максимальное количество локаций</p>
+								</div>
+								<ul class="option__advantage">
+									<li class="advantage__item">
+										<img src="img/list_marker.png" alt="list marker" />
+										Длительность - 4 часа
+									</li>
+									<li class="advantage__item">
+										<img src="img/list_marker.png" alt="list marker" />
+										Исходники - До 500 штук
+									</li>
+									<li class="advantage__item">
+										<img src="img/list_marker.png" alt="list marker" />
+										Ретушь - 50 фото
+									</li>
+									<li class="advantage__item">
+										<img src="img/list_marker.png" alt="list marker" />
+										Аренда фотостудии - Бесплатно
+									</li>
+									<li class="advantage__item">
+										<img src="img/list_marker.png" alt="list marker" />
+										Визажист - Make Up, Укладка
+									</li>
+									<li class="advantage__item">
+										<img src="img/list_marker.png" alt="list marker" />
+										Предварительный подбор образов - ДО 8 образов
+									</li>
+								</ul>
+							</div>
+							<div class="cards__additional-services">
+								<p class="additional-services__title">Дополнительные услуги</p>
+								<div class="additional-services__container">
+									<p class="additional-services__retouch">Дополнительная ретушь фото - 1 шт./250 &#8381;</p>
+								</div>
+								<button class="button price__button">Забронировать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="trend">
+				<div class="trend__container container">
+					<p class="trend__title">Фотостудия для любых идейных фотосессий</p>
+					<div class="trend__paragraph">
+						<p>Мы искренни так считаем и готовы кричать эту фразу на весь мир. Фотографии давно перестали пылиться на полках в семейных, потрёпанных альбомах.</p>
+						<p>
+							Хотите самовыразиться и не знаете как? Позвоните нам и закажите фотосъемку. Хотите удивить и впечатлить? Мы вам поможем. Не уверены? Посмотрите отзывы и
+							проконсультируйтесь. Боитесь фотографироваться? Наши локации помогут вам расслабиться и почувствовать себя как дома.
+						</p>
+						<p>Доступные цены для всех и вежливость.</p>
+					</div>
+					<button id="trendButton" class="opening-button accent">
+						<p>Подробнее</p>
+						<div id="trendArrow" class="arrow__container">
+							<img class="arrow-down" src="img/arrow-down.svg" alt="стрелка вниз" />
+						</div>
+					</button>
+					<div class="trend__expand">
+						<p>Повторим еще раз: мы работаем в первую очередь для клиентов, и аренда нашей фотостудии имеют цены семи чашек кофе.</p>
+						<p>Вы можете расплатится любым удобным для вас способом: наличным или безналичным расчетом. Все для вашего удобства.</p>
+
+						<p>
+							Вежливость тоже относиться к главным нашим качествам. У нас вы не найдете ужасного обращения, мы всегда готовы ответить вам и проконсультировать, помочь и стать вашими
+							друзьями. Все наши работники улыбчивы и приветливы вам, которые не оставят вам плохого настроения.
+						</p>
+
+						<p>
+							В каждом городе есть хотя бы несколько фотостудий и часто поход туда, становиться чуть ли не традицией семьи, пар или друзей. Тренд на истории в фотографиях для социальных
+							сетей, где мы проводим много времени, не угасал и не угаснет никогда. Фотоссесия лав стори или семейная привлекает внимание всех людей и, доказано, набирает больше всего
+							одобрений со стороны людей всего мира. Для качественного исполнения вашей мечты стоит обращаться к профессионалу и выбирать интересные локации.
+						</p>
+
+						<p>
+							Наша фотостудия предлагает и то, и то. Профессиональный фотограф сможет сделать качественные, интересные фотографии, помочь вам воплотить вашу идею в жизнь в уютных залах
+							фотостудии.
+						</p>
+
+						<p>
+							На ваш выбор у нас есть 7 фотозалов, каждый из которых прекрасен и индивидуален по-своему. В больших залах отлично будет смотреться групповая фотосессия, а в залах меньше
+							получиться интересная фотоссесия в деловом стиле.
+						</p>
+
+						<p>Мы работаем в первую очередь на качество, поэтому наши цены не завышенные и доступны всем желающим. У нас есть различные и удобные способы оплаты для вас.</p>
+					</div>
+				</div>
+			</section>
+			<section class="certificate">
+				<div class="certificate__container container">
+					<h2 class="certificate__title title">Подарочный сертификат на фотосессию</h2>
+					<div class="certificate__inner">
+						<div class="certificate__box">
+							<div class="inner__left">
+								<p class="inner__title">Сертификат на фотосессию</p>
+								<p class="inner__text">Это подарок, который западает в душу</p>
+								<ul class="certificate__advantages">
+									<li class="advantage__list-item">
+										<img class="advantage__list-mark" src="img/cert_advantages.svg" alt="list marker" />
+										<p>Креативное оформление</p>
+									</li>
+									<li class="advantage__list-item">
+										<img class="advantage__list-mark" src="img/cert_advantages.svg" alt="list marker" />
+										<p>Открытый календарь</p>
+									</li>
+									<li class="advantage__list-item">
+										<img class="advantage__list-mark" src="img/cert_advantages.svg" alt="list marker" />
+										<p>Всё включено</p>
+									</li>
+								</ul>
+							</div>
+							<div class="inner__right">
+								<img class="inner__right-envelope" src="img/certificate_gift-removebg.png" alt="envelope" />
+								<p class="right__text">Срок действия сертификата: 2 месяца со дня приобретения.</p>
+								<button class="button certificate__button">Приобрести</button>
+								<div class="certificate-box">
+									<img class="certificate__line" src="img/certificate_line.svg" alt="decor line" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="reviews" class="reviews">
+				<div class="reviews__container container">
+					<h2 class="reviews__title title">Отзывы</h2>
+					<div class="reviews__carousel">
+						<div class="carousel__review">
+							<div class="carousel__img-container">
+								<img src="img/reviews_1.webp" alt="photo" />
+							</div>
+							<p class="review__name">Мария</p>
+							<p class="review__text">
+								Были на той неделе с подругой в фотостудии. Очень все понравилось! Чисто, красиво, уютно! Две милые девушки, напоили чаем с конфетами, а их очаровательный котик просто
+								покорил мое сердце )) В общем, душевная атмосфера, обязательно вернемся еще раз!
+							</p>
+							<button class="review__button accent">Показать еще</button>
+						</div>
+						<div class="carousel__review">
+							<div class="carousel__img-container">
+								<img src="img/reviews_2.webp" alt="photo" />
+							</div>
+							<p class="review__name">Сергей</p>
+							<p class="review__text">
+								Супер студия :) Близко от метро, большие окна, тупло зимой, высокие потолки и много пространства :) Есть система скидок и акций :) Люблю, хожу, всем хвалю :)
+							</p>
+							<button class="review__button accent">Показать еще</button>
+						</div>
+						<div class="carousel__review">
+							<div class="carousel__img-container">
+								<img src="img/reviews_3.webp" alt="photo" />
+							</div>
+							<p class="review__name">Руслан</p>
+							<p class="review__text">Отличная уютная студия которая подойдет для различный жанров съемки! Советую!</p>
+							<button class="review__button accent">Показать еще</button>
+						</div>
+						<div class="carousel__review">
+							<div class="carousel__img-container">
+								<img src="img/reviews_1.webp" alt="photo" />
+							</div>
+							<p class="review__name">Мария</p>
+							<p class="review__text">
+								Были на той неделе с подругой в фотостудии. Очень все понравилось! Чисто, красиво, уютно! Две милые девушки, напоили чаем с конфетами, а их очаровательный котик просто
+								покорил мое сердце )) В общем, душевная атмосфера, обязательно вернемся еще раз!
+							</p>
+							<button class="review__button accent">Показать еще</button>
+						</div>
+						<div class="carousel__review">
+							<div class="carousel__img-container">
+								<img src="img/reviews_2.webp" alt="photo" />
+							</div>
+							<p class="review__name">Сергей</p>
+							<p class="review__text">
+								Супер студия :) Близко от метро, большие окна, тупло зимой, высокие потолки и много пространства :) Есть система скидок и акций :) Люблю, хожу, всем хвалю :)
+							</p>
+							<button class="review__button accent">Показать еще</button>
+						</div>
+						<div class="carousel__review">
+							<div class="carousel__img-container">
+								<img src="img/reviews_3.webp" alt="photo" />
+							</div>
+							<p class="review__name">Руслан</p>
+							<p class="review__text">Отличная уютная студия которая подойдет для различный жанров съемки! Советую!</p>
+							<button class="review__button accent">Показать еще</button>
+						</div>
+					</div>
+
+					<button class="carousel__button-left">
 						<svg class="button-left" width="93" height="93" viewBox="0 0 93 93" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g filter="url(#filter0_d_106_454)">
 								<circle cx="46.5" cy="44.5" r="36.5" transform="rotate(-180 46.5 44.5)" fill="white" />
@@ -177,7 +696,7 @@
 							</defs>
 						</svg>
 					</button>
-					<button class="locations__button-right">
+					<button class="carousel__button-right">
 						<svg class="button-right" width="93" height="93" viewBox="0 0 93 93" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g filter="url(#filter0_d_106_450)">
 								<circle cx="46.5" cy="44.5" r="36.5" fill="white" />
@@ -197,516 +716,42 @@
 							</defs>
 						</svg>
 					</button>
+
+					<button class="button review__add-review">Добавить отзыв</button>
 				</div>
-				<div class="locations__showLocations"><button class="button locations__button">выбрать локацию</button></div>
-			</div>
-		</section>
-		<section class="studio-decor">
-			<div class="studio-decor__container">
-				<h2 class="studio-decor__title title">Оформление студии</h2>
-				<iframe
-					class="studio-decor__video"
-					src="https://www.youtube.com/embed/jmxZl9xc-TM"
-					title="YouTube video player"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					allowfullscreen
-				>
-				</iframe>
-			</div>
-		</section>
-		<section class="services">
-			<div class="services__container container">
-				<h2 class="services__title title">Виды услуг</h2>
-				<div class="services__gallery">
-					<div class="gallery__card card-lovestory">
-						<img src="img/sersices_love-story.webp" alt="loveStory" />
-						<p>Фотосессия Лав Стори</p>
+			</section>
+			<section id="contacts" class="contacts">
+				<div class="contacts__container container">
+					<div class="contacts__map">
+						<iframe
+							width="425"
+							height="350"
+							frameborder="0"
+							scrolling="no"
+							marginheight="0"
+							marginwidth="0"
+							src="https://www.openstreetmap.org/export/embed.html?bbox=37.84879088401795%2C55.98888820061538%2C37.85662293434144%2C55.99452893012596&amp;layer=mapnik&amp;marker=55.9917086682516%2C37.85270690917969"
+						></iframe
+						><br /><small> <a href="https://www.openstreetmap.org/?mlat=55.99171&amp;mlon=37.85271#map=17/55.99171/37.85271">Посмотреть более крупную карту</a></small>
 					</div>
-
-					<div class="gallery__card card-teens">
-						<img src="img/services_teens.webp" alt="teens" />
-						<p>Фотосессия для подростков</p>
-					</div>
-
-					<div class="gallery__card card-couples">
-						<img src="img/services_couples.webp" alt="couples" />
-						<p>Парная фотосессия</p>
-					</div>
-
-					<div class="gallery__card card-couples2">
-						<img src="img/services_couple2.webp" alt="couples" />
-						<p>Парная фотосессия</p>
-					</div>
-
-					<div class="gallery__card card-boys">
-						<img src="img/services_boys.webp" alt="boys" />
-						<p>Фотосессия для парней</p>
-					</div>
-
-					<div class="gallery__card card-family">
-						<img src="img/services_family.webp" alt="family" />
-						<p>Семейная фотосессия (дети +14)</p>
-					</div>
-
-					<div class="gallery__card card-group">
-						<img src="img/services_group.webp" alt="group" />
-						<p>Групповая фотосессия</p>
-					</div>
-
-					<div class="gallery__card card-lookbook">
-						<img src="img/services_lookbook.webp" alt="lookbook" />
-						<p>Фотосессия Лукбук</p>
-					</div>
-
-					<div class="gallery__card card-women">
-						<img class="card-women__img" src="img/services_woomen.webp" alt="women" />
-						<p>Фотосессия для девушек</p>
-					</div>
-
-					<div class="gallery__card card-pregnant">
-						<img src="img/services_pregnant.webp" alt="pregnant" />
-						<p>Фотосессия для беременных</p>
-					</div>
-
-					<div class="gallery__card card-animals">
-						<img src="img/services_animals.webp" alt="dogs" />
-						<p>Фотосессия с животными</p>
-					</div>
-
-					<div class="gallery__card card-casual">
-						<img src="img/services_casual-style.webp" alt="" />
-						<p>Фотосессия "Деловой стиль"</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="stages">
-			<div class="stages__container container">
-				<h2 class="stages__title title">Этапы работ</h2>
-				<div class="stages__wrapper">
-					<div class="stages__item stage__1">
-						<div class="stages__inner">
-							<h3 class="item__title">Заявка</h3>
-							<p class="item__text">С помощью онлайн формы вы можете подать заявку для бронирования наших услуг.</p>
-						</div>
-						<p class="stage-number number-1">1</p>
-					</div>
-
-					<div class="stages__item stage__2">
-						<div class="stages__inner">
-							<h3 class="item__title">Бронь</h3>
-							<p class="item__text">С Вами свяжется наш менеджер для уточнения деталей и подтверждения бронирования.</p>
-						</div>
-						<p class="stage-number number-2">2</p>
-					</div>
-
-					<div class="stages__item stage__3">
-						<div class="stages__inner">
-							<h3 class="item__title">Составление Технического задания</h3>
-							<p class="item__text">Наши специалисты составят подробное Техническое задание, с ваших слов.</p>
-						</div>
-						<p class="stage-number number-3">3</p>
-					</div>
-
-					<div class="stages__item stage__4">
-						<div class="stages__inner">
-							<h3 class="item__title">Съемка</h3>
-							<p class="item__text">Съемка будет проходиться опытным фотографом на выбранной Вами локации.</p>
-						</div>
-						<p class="stage-number number-4">4</p>
-					</div>
-
-					<div class="stages__item stage__5">
-						<div class="stages__inner">
-							<h3 class="item__title">Готовые фото</h3>
-							<p class="item__text">В течение 7 дней мы обработаем Ваши фотографии и направим ссылку на онлайн хранилище.</p>
-						</div>
-						<p class="stage-number number-5">5</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="idea">
-			<div class="idea__container container">
-				<h3 class="idea__title">Фотостудия для любых идейных фотоссесий</h3>
-				<div class="idea__paragraph">
-					<p>Воплотите мечту с нашей фотостудией и приобретите красивые, уникальные, качественные фотографии, выбрав один из наших залов. <br />А их, -на секундочку, -аж семь штук.</p>
-					<p>Каждый наш зал оборудован интерьером и профессиональным оборудованием, и подойдет для любой фотоссесии, а мы хотим рассказать вам о все подробнее.</p>
-					<p>Какие идеи можно воплотить?</p>
-					<p>• Фотоссесия Love Story</p>
-					<p>
-						Мечтаете показать всему миру вашу историю создания любви или хранить снимки в памятном альбоме, то это фотоссесия отлично подойдет вам. Расскажите вашу историю с любимым
-						человеком в фотографиях в необычном месте.
-					</p>
-				</div>
-				<button id="ideaButton" class="opening-button accent">
-					<p>Подробнее</p>
-					<div id="ideaArrow" class="arrow__container">
-						<img class="arrow-down" src="img/arrow-down.svg" alt="" />
-					</div>
-				</button>
-				<div class="idea__expand">
-					<p>• Семейная фотоссесия</p>
-
-					<p>
-						Семья — это самое главное в жизни любого человека. Хотите повесить фотографии в вашем уютном доме, смотреть на них и испытывать прилив нежности, значит семейная фотоссесия в
-						нашей фотостудии станет отличным вариантом.
-					</p>
-
-					<p>• Фотоссесия для беременных девушек</p>
-
-					<p>
-						Желаете сохранить воспоминания о прекрасном времени в жизни каждой женщины? Наши локации помогут вам организовать и воссоздать в фотографиях любовь матери и еще не родившегося
-						ребенка.
-					</p>
-
-					<p>• Фотоссесия «Деловой стиль».</p>
-
-					<p>
-						Вы не из тех, кто любит яркие чувства, эмоции и считаете себя сдержанным. Вам нужны фотографии, где вы раскроетесь как профессионал, произведете впечатление как деловой
-						человек. Эта фотоссесия станет вашим правильным решением.
-					</p>
-
-					<p>• Фотоссесия для девушек и парней.</p>
-
-					<p>Хочешь стать кем-то другим? Или, наоборот, показать свое «я»? Фотоссесия для девушек или парней поможет воплотить любые идеи.</p>
-
-					<p>Помимо вышеперечисленного есть и другие стили фотоссесий. Вы самостоятельно выбираете, а наши фотозалы помогают вам и вдохновляют.</p>
-
-					<p>Кстати, о них…</p>
-
-					<p>
-						Все семь фото локаций уникальные в своем роде. Мы пытались воссоздать непохожесть на другие фотостудии не только в городе, но и во всей стране. Каждый зал отличается от других
-						по дизайнерскому решению и интерьеру. И каждый зал пропитан своим духом, стилем и видится для каждого нашего посетителя по-разному. Светлые помещения помогут получить более
-						качественные, яркие фотоснимки. Трендовая мебель и другие предметы интерьера можно двигать и активно использовать в фотосъемках. Локации подойдут для любых людей и задач:
-						блогеров и медийных личностей, обычных и счастливых семей, предпринимателей и подростков. Что еще нужно знать о нас?
-					</p>
-
-					<p>
-						Оборудование. Неотъемлемая часть любой фотостудии и нередко владельцы фотостудий экономят на этой важной части. Мы используем все оборудование только от профессиональных
-						продавцов, которые уже не один год предлагают свои товары на мировом рынке. Вы найдете все что нужно и необходимо для работы фотографов, для создания образов и света. Ведь
-						именно от оборудования часто зависит качество получающихся фотоснимков.
-					</p>
-				</div>
-			</div>
-		</section>
-		<section class="price">
-			<div class="price__container container">
-				<h2 class="price__title title">Стоимость фотосессии</h2>
-				<div class="prices__cards">
-					<div class="cards__option option__mini">
-						<div class="option__container">
-							<div class="option__top">
-								<h3 class="card__title">MINI</h3>
-								<p class="option__price">2500 <span class="price_rub">&#8381;</span></p>
-								<p class="option__loc-q">/ 1 локация</p>
-							</div>
-							<ul class="option__advantage">
-								<li class="advantage__item">
-									<img src="img/list_marker.png" alt="" />
-									Длительность - 30 минут
-								</li>
-								<li class="advantage__item">
-									<img src="img/list_marker.png" alt="" />
-									Исходники - До 100 штук
-								</li>
-								<li class="advantage__item">
-									<img src="img/list_marker.png" alt="" />
-									Ретушь - 4 фото
-								</li>
-								<li class="advantage__item">
-									<img src="img/list_marker.png" alt="" />
-									Аренда фотостудии - Бесплатно
-								</li>
-								<li class="advantage__item">
-									<img src="img/list_marker.png" alt="" />
-									Любой образ
-								</li>
-							</ul>
-						</div>
-						<div class="cards__additional-services">
-							<p class="additional-services__title">Дополнительные услуги</p>
-							<div class="additional-services__container">
-								<p>Помощь в позировании</p>
-								<p>Визажист + 2000 &#8381;</p>
-								<p class="additional-services__retouch">Дополнительная ретушь фото - 1 шт./250 &#8381;</p>
-							</div>
-							<button class="button price__button">Забронировать</button>
-						</div>
-					</div>
-
-					<div class="cards__option option__standart">
-						<div class="option__container">
-							<div class="option__top">
-								<h3 class="card__title">STANDART</h3>
-								<p class="option__price">5000 <span class="price_rub">&#8381;</span></p>
-								<p class="option__loc-q">/ 2 локация</p>
-							</div>
-							<ul class="option__advantage">
-								<li class="advantage__item">
-									<img src="img/list_marker.png" alt="" />
-									Длительность - 1 час 20 минут
-								</li>
-								<li class="advantage__item">
-									<img src="img/list_marker.png" alt="" />
-									Исходники - До 200 штук
-								</li>
-								<li class="advantage__item">
-									<img src="img/list_marker.png" alt="" />
-									Ретушь - 8 фото
-								</li>
-								<li class="advantage__item">
-									<img src="img/list_marker.png" alt="" />
-									Аренда фотостудии - Бесплатно
-								</li>
-								<li class="advantage__item">
-									<img src="img/list_marker.png" alt="" />
-									Любой образ
-								</li>
-							</ul>
-						</div>
-						<div class="cards__additional-services">
-							<p class="additional-services__title">Дополнительные услуги</p>
-							<div class="additional-services__container">
-								<p>Помощь в позировании</p>
-								<p>Визажист + 2000 &#8381;</p>
-								<p class="additional-services__retouch">Дополнительная ретушь фото - 1 шт./250 &#8381;</p>
-							</div>
-							<button class="button price__button">Забронировать</button>
-						</div>
-					</div>
-
-					<div class="cards__option option__maxi">
-						<div class="option__container">
-							<div class="option__top">
-								<h3 class="card__title">MAXI</h3>
-								<p class="option__price">7500 <span class="price__rub">&#8381;</span></p>
-								<p class="option__loc-q">/ Максимальное количество локаций</p>
-							</div>
-							<ul class="option__advantage">
-								<li class="advantage__item">
-									<img src="img/list_marker.png" alt="" />
-									Длительность - 4 часа
-								</li>
-								<li class="advantage__item">
-									<img src="img/list_marker.png" alt="" />
-									Исходники - До 500 штук
-								</li>
-								<li class="advantage__item">
-									<img src="img/list_marker.png" alt="" />
-									Ретушь - 50 фото
-								</li>
-								<li class="advantage__item">
-									<img src="img/list_marker.png" alt="" />
-									Аренда фотостудии - Бесплатно
-								</li>
-								<li class="advantage__item">
-									<img src="img/list_marker.png" alt="" />
-									Визажист - Make Up, Укладка
-								</li>
-								<li class="advantage__item">
-									<img src="img/list_marker.png" alt="" />
-									Предварительный подбор образов - ДО 8 образов
-								</li>
-							</ul>
-						</div>
-						<div class="cards__additional-services">
-							<p class="additional-services__title">Дополнительные услуги</p>
-							<div class="additional-services__container">
-								<p class="additional-services__retouch">Дополнительная ретушь фото - 1 шт./250 &#8381;</p>
-							</div>
-							<button class="button price__button">Забронировать</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="trend">
-			<div class="trend__container container">
-				<p class="trend__title">Фотостудия для любых идейных фотосессий</p>
-				<div class="trend__paragraph">
-					<p>Мы искренни так считаем и готовы кричать эту фразу на весь мир. Фотографии давно перестали пылиться на полках в семейных, потрёпанных альбомах.</p>
-					<p>
-						Хотите самовыразиться и не знаете как? Позвоните нам и закажите фотосъемку. Хотите удивить и впечатлить? Мы вам поможем. Не уверены? Посмотрите отзывы и проконсультируйтесь.
-						Боитесь фотографироваться? Наши локации помогут вам расслабиться и почувствовать себя как дома.
-					</p>
-					<p>Доступные цены для всех и вежливость.</p>
-				</div>
-				<button id="trendButton" class="opening-button accent">
-					<p>Подробнее</p>
-					<div id="trendArrow" class="arrow__container">
-						<img class="arrow-down" src="img/arrow-down.svg" alt="" />
-					</div>
-				</button>
-				<div class="trend__expand">
-					<p>Повторим еще раз: мы работаем в первую очередь для клиентов, и аренда нашей фотостудии имеют цены семи чашек кофе.</p>
-					<p>Вы можете расплатится любым удобным для вас способом: наличным или безналичным расчетом. Все для вашего удобства.</p>
-
-					<p>
-						Вежливость тоже относиться к главным нашим качествам. У нас вы не найдете ужасного обращения, мы всегда готовы ответить вам и проконсультировать, помочь и стать вашими
-						друзьями. Все наши работники улыбчивы и приветливы вам, которые не оставят вам плохого настроения.
-					</p>
-
-					<p>
-						В каждом городе есть хотя бы несколько фотостудий и часто поход туда, становиться чуть ли не традицией семьи, пар или друзей. Тренд на истории в фотографиях для социальных
-						сетей, где мы проводим много времени, не угасал и не угаснет никогда. Фотоссесия лав стори или семейная привлекает внимание всех людей и, доказано, набирает больше всего
-						одобрений со стороны людей всего мира. Для качественного исполнения вашей мечты стоит обращаться к профессионалу и выбирать интересные локации.
-					</p>
-
-					<p>
-						Наша фотостудия предлагает и то, и то. Профессиональный фотограф сможет сделать качественные, интересные фотографии, помочь вам воплотить вашу идею в жизнь в уютных залах
-						фотостудии.
-					</p>
-
-					<p>
-						На ваш выбор у нас есть 7 фотозалов, каждый из которых прекрасен и индивидуален по-своему. В больших залах отлично будет смотреться групповая фотосессия, а в залах меньше
-						получиться интересная фотоссесия в деловом стиле.
-					</p>
-
-					<p>Мы работаем в первую очередь на качество, поэтому наши цены не завышенные и доступны всем желающим. У нас есть различные и удобные способы оплаты для вас.</p>
-				</div>
-			</div>
-		</section>
-		<section class="certificate">
-			<div class="certificate__container container">
-				<h2 class="certificate__title title">Подарочный сертификат на фотосессию</h2>
-				<div class="certificate__inner">
-					<div class="inner__left">
-						<p class="inner__title">Сертификат на фотосессию</p>
-						<p class="inner__text">Это подарок, который западает в душу</p>
-						<ul class="certificate__advantages">
-							<li class="advantage__list-item">
-								<img src="img/cert_advantages.svg" alt="" />
-								<p>Креативное оформление</p>
-							</li>
-							<li class="advantage__list-item">
-								<img src="img/cert_advantages.svg" alt="" />
-								<p>Открытый календарь</p>
-							</li>
-							<li class="advantage__list-item">
-								<img src="img/cert_advantages.svg" alt="" />
-								<p>Всё включено</p>
-							</li>
-						</ul>
-					</div>
-					<div class="inner__right">
-						<img class="inner_right-envelope" src="img/certificate_gift-removebg.png" alt="" />
-						<p class="right__text">Срок действия сертификата: 2 месяца со дня приобретения.</p>
-						<button class="button certificate__button">Приобрести</button>
-						<div class="certificate-box">
-							<img class="certificate__line" src="img/certificate_line.svg" alt="" />
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="reviews">
-			<div class="reviews__container container">
-				<h2 class="reviews__title title">Отзывы</h2>
-				<div class="reviews__carousel">
-					<div class="carousel__review">
-						<div class="carousel__img-container">
-							<img src="img/reviews_1.webp" alt="" />
-						</div>
-						<p class="review__name">Мария</p>
-						<p class="review__text">
-							Были на той неделе с подругой в фотостудии. Очень все понравилось! Чисто, красиво, уютно! Две милые девушки, напоили чаем с конфетами, а их очаровательный котик просто
-							покорил мое сердце )) В общем, душевная атмосфера, обязательно вернемся еще раз!
+					<form class="form" action="#" method="">
+						<legend class="contacts__title">Форма обратной связи</legend>
+						<fieldset class="form__inner">
+							<label for="name">Имя</label>
+							<input class="input" type="text" name="name" placeholder="Введите ваше имя" required />
+							<label for="e-mail">E-mail</label>
+							<input class="input" type="email" name="e-mail" placeholder="Введите ваш E-mail" required />
+							<label for="phone">Телефон</label>
+							<input class="input" type="tel" name="phone" placeholder="Введите ваш Телефон" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" required />
+							<button type="submit" class="button contacts__submit">Отправить</button>
+						</fieldset>
+						<p class="contacts__prescription">
+							Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь c <a class="prescription_link" href="#">политикой конфиденциальности</a>
 						</p>
-						<button class="review__button accent">Показать еще</button>
-					</div>
-					<div class="carousel__review">
-						<div class="carousel__img-container">
-							<img src="img/reviews_2.webp" alt="" />
-						</div>
-						<p class="review__name">Сергей</p>
-						<p class="review__text">
-							Супер студия :) Близко от метро, большие окна, тупло зимой, высокие потолки и много пространства :) Есть система скидок и акций :) Люблю, хожу, всем хвалю :)
-						</p>
-						<button class="review__button accent">Показать еще</button>
-					</div>
-					<div class="carousel__review">
-						<div class="carousel__img-container">
-							<img src="img/reviews_3.webp" alt="" />
-						</div>
-						<p class="review__name">Руслан</p>
-						<p class="review__text">Отличная уютная студия которая подойдет для различный жанров съемки! Советую!</p>
-						<button class="review__button accent">Показать еще</button>
-					</div>
-					<div class="carousel__review">
-						<div class="carousel__img-container">
-							<img src="img/reviews_1.webp" alt="" />
-						</div>
-						<p class="review__name">Мария</p>
-						<p class="review__text">
-							Были на той неделе с подругой в фотостудии. Очень все понравилось! Чисто, красиво, уютно! Две милые девушки, напоили чаем с конфетами, а их очаровательный котик просто
-							покорил мое сердце )) В общем, душевная атмосфера, обязательно вернемся еще раз!
-						</p>
-						<button class="review__button accent">Показать еще</button>
-					</div>
-					<div class="carousel__review">
-						<div class="carousel__img-container">
-							<img src="img/reviews_2.webp" alt="" />
-						</div>
-						<p class="review__name">Сергей</p>
-						<p class="review__text">
-							Супер студия :) Близко от метро, большие окна, тупло зимой, высокие потолки и много пространства :) Есть система скидок и акций :) Люблю, хожу, всем хвалю :)
-						</p>
-						<button class="review__button accent">Показать еще</button>
-					</div>
-					<div class="carousel__review">
-						<div class="carousel__img-container">
-							<img src="img/reviews_3.webp" alt="" />
-						</div>
-						<p class="review__name">Руслан</p>
-						<p class="review__text">Отличная уютная студия которая подойдет для различный жанров съемки! Советую!</p>
-						<button class="review__button accent">Показать еще</button>
-					</div>
+					</form>
 				</div>
-
-				<button class="carousel__button-left">
-					<img class="button-left" src="img/port_button-left.svg" alt="" />
-				</button>
-				<button class="carousel__button-right">
-					<img src="img/port_button-right.svg" alt="" />
-				</button>
-
-				<button class="button review__add-review">Добавить отзыв</button>
-			</div>
-		</section>
-		<section class="contacts">
-			<div class="contacts__container container">
-				<div class="contacts__map">
-					<iframe
-						width="425"
-						height="350"
-						frameborder="0"
-						scrolling="no"
-						marginheight="0"
-						marginwidth="0"
-						src="https://www.openstreetmap.org/export/embed.html?bbox=37.84879088401795%2C55.98888820061538%2C37.85662293434144%2C55.99452893012596&amp;layer=mapnik&amp;marker=55.9917086682516%2C37.85270690917969"
-						
-					></iframe
-					><br /><small> <a href="https://www.openstreetmap.org/?mlat=55.99171&amp;mlon=37.85271#map=17/55.99171/37.85271">Посмотреть более крупную карту</a></small>
-				</div>
-				<form class="form" action="#" method="">
-					<h2 class="contacts__title">Форма обратной связи</h2>
-					<div class="form__inner">
-						<label for="name">Имя</label>
-						<input class="input" type="text" name="name" placeholder="Введите ваше имя" required />
-						<label for="e-mail">E-mail</label>
-						<input class="input" type="email" name="e-mail" placeholder="Введите ваш E-mail" required />
-						<label for="phone">Телефон</label>
-						<input class="input" type="tel" name="phone" placeholder="Введите ваш Телефон" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" required />
-						<button type="submit" class="button contacts__submit">Отправить</button>
-					</div>
-					<p class="contacts__prescription">
-						Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь c <a class="prescription_link" href="#">политикой конфиденциальности</a>
-					</p>
-				</form>
-			</div>
-		</section>
+			</section>
+		</main>
 		<footer class="footer">
 			<div class="footer__container container">
 				<div class="footer__inner">

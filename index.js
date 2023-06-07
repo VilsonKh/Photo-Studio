@@ -10,9 +10,10 @@ $(function () {
 		dots: false,
 		responsive: [
       {
-         breakpoint: 376, 
+         breakpoint: 900, 
         settings: {
-          slidesToShow: 1
+          slidesToShow: 1,
+					// adaptiveHeight: true
         } 
       }],
 	});
@@ -24,7 +25,7 @@ $(function () {
 		nextArrow: ".locations__button-right",
     responsive: [
       {
-         breakpoint: 375, 
+         breakpoint: 900, 
         settings: {
           
           slidesToShow: 1
@@ -39,14 +40,14 @@ $(function () {
 		nextArrow: ".carousel__button-right",
 		responsive: [
 			{
-				breakpoint: 376,
+				breakpoint: 900,
 				settings: 
         {
 					slidesToShow: 1,
 				},
 			},
       {
-        breakpoint : 1025 ,
+        breakpoint : 1145 ,
         settings: 
         {
           slidesToShow: 2,
@@ -88,24 +89,38 @@ $(function () {
 	// OPEN FULLSCREEN
 
 	const imageFullscreen = $('.imageFullscreen')
-
+	const imageFullscreenIMG = $('.imageFullscreen__img')
 
 	$(document).on('click', '.slick-slide', function (e) {
+
+		if(!($(e.target).attr('src')) ) return
+
 		imageFullscreen.addClass('active');
-
-		const target = e.target;
-		console.log(target)
-
+		const target = $(e.target);
+		console.log(target.attr('src'))
+		imageFullscreenIMG.attr('src', target.attr('src'))
 		const scrollTop = $(document).scrollTop()
 		imageFullscreen.css('top',scrollTop)
 	})
 
-	$('.imageFullscreen__close').on('click',function() {
+	$('.imageFullscreen').on('click', function(e) {
+		if($(e.target).attr('src')) return
 		imageFullscreen.removeClass('active')
 	})
 
-	$('.imageFullscreen').on('click', function(e) {
-		imageFullscreen.removeClass('active')
+	// OPEN BURGER-MENU
+
+	const burgerButton = $('.menu-burger');
+	const burgerMenu = $(".burger-menu")
+	const burgerLink = $('.burger-menu__link')
+
+	burgerButton.on('click', function() {
+		burgerMenu.toggleClass('active')
 	})
+
+	burgerLink.on('click', function() {
+		burgerMenu.toggleClass('active')
+	})
+
 
 });
