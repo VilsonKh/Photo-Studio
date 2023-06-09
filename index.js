@@ -9,13 +9,14 @@ $(function () {
 		nextArrow: ".gallery__button-right",
 		dots: false,
 		responsive: [
-      {
-         breakpoint: 900, 
-        settings: {
-          slidesToShow: 1,
+			{
+				breakpoint: 900,
+				settings: {
+					slidesToShow: 1,
 					// adaptiveHeight: true
-        } 
-      }],
+				},
+			},
+		],
 	});
 
 	$(".locations__gallery").slick({
@@ -23,14 +24,14 @@ $(function () {
 		arrows: true,
 		prevArrow: ".locations__button-left",
 		nextArrow: ".locations__button-right",
-    responsive: [
-      {
-         breakpoint: 900, 
-        settings: {
-          
-          slidesToShow: 1
-        } 
-      }],
+		responsive: [
+			{
+				breakpoint: 900,
+				settings: {
+					slidesToShow: 1,
+				},
+			},
+		],
 	});
 
 	$(".reviews__carousel").slick({
@@ -41,18 +42,16 @@ $(function () {
 		responsive: [
 			{
 				breakpoint: 900,
-				settings: 
-        {
+				settings: {
 					slidesToShow: 1,
 				},
 			},
-      {
-        breakpoint : 1145 ,
-        settings: 
-        {
-          slidesToShow: 2,
-        }
-      }
+			{
+				breakpoint: 1145,
+				settings: {
+					slidesToShow: 2,
+				},
+			},
 		],
 	});
 
@@ -88,39 +87,33 @@ $(function () {
 
 	// OPEN FULLSCREEN
 
-	const imageFullscreen = $('.imageFullscreen')
-	const imageFullscreenIMG = $('.imageFullscreen__img')
+	const imageFullscreen = $(".imageFullscreen");
+	const imageFullscreenIMG = $(".imageFullscreen__img");
 
-	$(document).on('click', '.slick-slide', function (e) {
+	$(document).on("click", ".slick-slide", function (e) {
+		if (!$(e.target).attr("src")) return;
 
-		if(!($(e.target).attr('src')) ) return
-
-		imageFullscreen.addClass('active');
+		imageFullscreen.addClass("active");
 		const target = $(e.target);
-		console.log(target.attr('src'))
-		imageFullscreenIMG.attr('src', target.attr('src'))
-		const scrollTop = $(document).scrollTop()
-		imageFullscreen.css('top',scrollTop)
-	})
+		imageFullscreenIMG.attr("src", target.attr("src"));
+	});
 
-	$('.imageFullscreen').on('click', function(e) {
-		if($(e.target).attr('src')) return
-		imageFullscreen.removeClass('active')
-	})
+	$(".imageFullscreen").on("click", function (e) {
+		if ($(e.target).attr("src")) return;
+		imageFullscreen.removeClass("active");
+	});
 
 	// OPEN BURGER-MENU
 
-	const burgerButton = $('.menu-burger');
-	const burgerMenu = $(".burger-menu")
-	const burgerLink = $('.burger-menu__link')
+	const burgerButton = $(".menu-burger");
+	const burgerMenu = $(".burger-menu");
+	const burgerLink = $(".burger-menu__link");
 
-	burgerButton.on('click', function() {
-		burgerMenu.toggleClass('active')
-	})
+	burgerButton.on("click", function () {
+		burgerMenu.toggleClass("active");
+	});
 
-	burgerLink.on('click', function() {
-		burgerMenu.toggleClass('active')
-	})
-
-
+	burgerLink.on("click", function () {
+		burgerMenu.toggleClass("active");
+	});
 });
