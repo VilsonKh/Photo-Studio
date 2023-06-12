@@ -2,7 +2,7 @@
 
 The Photo Studio is a website dedicated to showcasing the creativity and expertise of a professional photography studio.
 
-The **PPhoto Studio website** can be accessed via [this link](https://vilsonkh.github.io/photo-studio/).
+The **Photo Studio website** can be accessed via [this link](https://vilsonkh.github.io/photo-studio/).
 
 ## Project Functionality
 

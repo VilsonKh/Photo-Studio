@@ -137,6 +137,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	color: white;
 }
 
 .burger-menu__link {
@@ -144,7 +145,7 @@ main {
 	color: white;
 	text-decoration: none;
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 26px;
 	line-height: 20px;
 	height: 30px;
 	transition: all 0.3s linear;
@@ -208,10 +209,12 @@ main {
 	background: linear-gradient(180deg, #ffa96b -21.43%, #ee7a28 100%);
 	border-radius: 10px;
 	padding: 14px 10px;
+	transition: all .5s linear;
 }
 
 .button:hover {
-	background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);
+	/* filter: hue-rotate(10deg); */
+	filter: saturate(1.7);
 }
 
 .main-screen__button {
@@ -284,7 +287,6 @@ main {
 	position: absolute;
 	display: flex;
 	top: 55%;
-	transform: translateX(-50%);
 }
 
 .gallery__button-left {
@@ -316,8 +318,9 @@ main {
 }
 
 .imageFullscreen__container {
-	width: 40%;
-
+	width: 75%;
+	max-width: 850px;
+	min-width: 330px;
 	margin: 0 auto;
 	text-align: center;
 	position: relative;
@@ -331,8 +334,8 @@ main {
 
 .imageFullscreen__close {
 	position: absolute;
-	top: 10%;
-	right: 10%;
+	top: 0%;
+	right: -10%;
 	width: 50px;
 	height: 50px;
 }
@@ -424,6 +427,8 @@ main {
 	position: absolute;
 	bottom: 16px;
 	left: 32px;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .services__gallery {
@@ -961,6 +966,7 @@ main {
 	position: absolute;
 	bottom: -20%;
 	right: -45%;
+	pointer-events: none;
 }
 
 .certificate__button {
@@ -1014,6 +1020,11 @@ main {
 	line-height: 24px;
 	display: block;
 	margin: 0 auto;
+	transition: all .3s linear;
+}
+
+.review__button:hover {
+	opacity: .6;
 }
 
 .reviews__button:nth-child(2) {
@@ -1043,14 +1054,14 @@ main {
 
 .carousel__button-left {
 	position: absolute;
-	top: 50%;
 	left: 0;
+	top: 45%;
 }
 
 .carousel__button-right {
 	position: absolute;
-	top: 50%;
 	right: 0;
+	top: 45%;
 }
 
 /* CONTACTS */
@@ -1235,6 +1246,11 @@ label {
 	justify-content: space-between;
 	max-width: 190px;
 	width: 100%;
+	align-items: center;
+}
+
+.social__list a {
+	display: flex;
 }
 
 svg path {
@@ -1338,6 +1354,12 @@ svg path {
 		margin-top: 50px;
 	}
 
+	.imageFullscreen__close {
+		bottom: 107%;
+		top: auto;
+		right: 0;
+	}
+
 	/* portfolio slider */
 
 	.gallery__button-right {
@@ -1353,10 +1375,6 @@ svg path {
 	.gallery__card > p {
 		left: 12px;
 		bottom: 12px;
-	}
-
-	.card-family > p {
-		width: 214px;
 	}
 
 	/* STAGES */
@@ -1682,9 +1700,8 @@ svg path {
 	.gallery__card > p {
 		font-size: 14px;
 		line-height: 16px;
-		width: 165px;
-		left: 18px;
-		bottom: 18px;
+		left: 10px;
+		bottom: 10px;
 	}
 }
 
@@ -1694,8 +1711,9 @@ svg path {
 		font-weight: 700;
 		font-size: 24px;
 		line-height: 140%;
-		text-align: center;
 		letter-spacing: 1.2px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.footer__menu {
